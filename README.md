@@ -44,15 +44,15 @@ lead_scoring/
 -npm start
 ## API endpoint
 
-| Route        | Method | Description                    |
-| ------------ | ------ | ------------------------------ |
-| `/offer` | GET    | Get all offers                 |
-| `/lead`  | GET    | Get all leads                  |
-| `/score` | GET    | Get scoring results            |
-| `/`          | GET    | Root route (API running check) |
+| Endpoint          | Method   | Purpose                                   |
+| ----------------- | -------- | ----------------------------------------- |
+| `/offer`          | **POST** | Upload a new product/offer (JSON payload) |
+| `/leads/upload`   | **POST** | Upload leads CSV file                     |
+| `/score`          | **POST** | Run scoring for uploaded leads            |
+| `/results`        | **GET**  | Get scored results in JSON                |
+| `/results/export` | **GET**  | Download scored results as CSV            |
 
 
-https://lead-scoring-1-350g.onrender.com/offer
 
 
 
